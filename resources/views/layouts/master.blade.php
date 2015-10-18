@@ -56,9 +56,10 @@
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Project 3 <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
+                           <ul class="dropdown-menu">
+                            <li class="title">Developers Best Friend</li>
                             <li><a href="#">View</a></li>
-                            <li><a href="#">Github</a></li>
+                            <li><a href="https://github.com/wjfletcher/p3">Github</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
