@@ -28,15 +28,18 @@ class randuserController extends Controller
         
         
         
-        for ($i=0; $i<$request->input('fakes'); $i++) {
-            $faker= \Faker\Factory::create();
-            $fake = array($faker->name);
+        $faker= \Faker\Factory::create();
+        $fake = array();
+        for ($i = 0; $i <= 6; $i++) {
+        
+            array_push($fake, $faker->name);
             if ($request->input('address') == TRUE) {
                 array_push($fake, $faker->address);
             }
             if ($request->input('number') == TRUE) {
                 array_push($fake, $faker->phoneNumber);
             }
+            array_push($fake, '<br>');
         }
         
         return view('randuser.postranduser')->with('faker', $fake);

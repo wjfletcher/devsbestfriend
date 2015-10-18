@@ -4,9 +4,8 @@
 
     
     @foreach ($faker as $faker)   
-        {{ $faker }}
+        {!! $faker !!}
         {!! '<br>' !!}
     @endforeach
-    
     
 @stop
