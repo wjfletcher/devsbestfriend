@@ -30,7 +30,7 @@ class randuserController extends Controller
         
         $faker= \Faker\Factory::create();
         $fake = array();
-        for ($i = 0; $i <= 6; $i++) {
+        for ($i = 0; $i < $request->input('fakes'); $i++) {
         
             array_push($fake, $faker->name);
             if ($request->input('address') == TRUE) {
