@@ -28,10 +28,9 @@ class loremController extends Controller
     
         $generator = new \Badcow\LoremIpsum\Generator();
         $paragraphs = $generator->getParagraphs($request->input('paragraphs'));
-        echo implode('<p>', $paragraphs);
+        //echo implode('<p>', $paragraphs);
         
-        dd($request->all());
-        return 'Process the ipsum';
+        return view('lorem.postlorem')->with('paragraphs', $paragraphs);
     }
 
     

@@ -18,9 +18,29 @@ class randuserController extends Controller
         return view('randuser.randuser') ;
     }
 
-    public function postRanduser()
+    public function postRanduser(Request $request)
     {
-        return 'Process the ipsum';
+        
+        $this->validate($request, [
+            'fakes' => 'required|numeric|min:1|max:25'
+        ]);
+        
+        
+        
+        
+        for ($i=0; $i<$request->input('fakes'); $i++) {
+            $faker= \Faker\Factory::create();
+            $fake = array($faker->name);
+            if ($request->input('address') == TRUE) {
+                array_push($fake, $faker->address);
+            }
+            if ($request->input('number') == TRUE) {
+                array_push($fake, $faker->phoneNumber);
+            }
+        }
+        
+        return view('randuser.postranduser')->with('faker', $fake);
+        
     }
 
 }
