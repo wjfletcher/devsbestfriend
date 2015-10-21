@@ -17,15 +17,15 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
-    <link rel="stylesheet" href="css/custom.css">
-
+    <!-- Custom CSS -->
     
+    <link rel="stylesheet" href="{{ URL::asset('master.css') }}">
 
 </head>
 
 <body>
     
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -80,6 +80,12 @@
     <br>
     <div class="container">
         <div class="jumbotron">
+            <h1>Developer's Best Friend</h1>
+            
+            <p>Ever wanted to create random users in order to populate your site? Or to make paragraphs and paragraphs of text with the click of a button? Well now you can! Introducing the Random User Generator and Lorem Ipsum text generator by Warren Fletcher. Simply click one of the buttons below to start producing data now!</p>
+            
+            <button type="button" class="btn btn-info"><a href="/randuser">Random User</a></button>
+            <button type="button" class="btn btn-info"><a href="/lorem">Lorem Ipsum Generator</a></button>
             
             
 

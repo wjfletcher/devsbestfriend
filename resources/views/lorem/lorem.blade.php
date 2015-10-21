@@ -3,8 +3,8 @@
 @section('content')
 
     <form method="post">
-        <input type='hidden' name='_token' value='{{ csrf_token() }}'>
-        <input type='text' name='paragraphs' value='{{ old('paragraphs') }}'><br>
+        <input type='hidden' class='form-control' name='_token' value='{{ csrf_token() }}'>
+        <input type='number' name='paragraphs' value='{{ old('paragraphs') }}' min='1' max='25' required><br>
         @if(count($errors) > 0)
             <ul>
                 @foreach ($errors->all() as $error)
@@ -12,7 +12,9 @@
                 @endforeach
             </ul>
         @endif
-        <input type='submit'>
+        <button type="submit" class="btn btn-success">
+        Generate
+        </button>
 
     </form>
 @stop

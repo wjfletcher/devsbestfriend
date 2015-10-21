@@ -4,9 +4,13 @@
 
     <form method="post">
         <input type='hidden' name='_token' value='{{ csrf_token() }}'>
-        <input type='text' name='fakes' value='{{ old('fakes') }}'><br>
-        <input type='checkbox' name='address'><br>
-        <input type='checkbox' name='number'><br>
+        <input type='number' name='fakes' value='{{ old('fakes') }}' min="1" max="25" required><br>
+        <div class="checkbox">
+        <label><input type='checkbox' name='address'>Include an address?</label><br>
+        </div>
+        <div class="checkbox">
+        <label><input type='checkbox' name='number'>Include a phone number?</label><br>
+        </div>
         @if(count($errors) > 0)
             <ul>
                 @foreach ($errors->all() as $error)
@@ -14,7 +18,8 @@
                 @endforeach
             </ul>
         @endif
-        <input type='submit'>
-
+        <button type="submit" class="btn btn-success">
+        Generate
+        </button>
     </form>
 @stop
