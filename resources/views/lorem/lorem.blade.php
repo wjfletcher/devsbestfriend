@@ -1,20 +1,28 @@
-@extends('layouts.master')
+@extends('layouts.master') 
 
 @section('content')
+<div class="section">
+    <h2>Lorem Ipsum Generator</h2>
+    <p>Simply enter the number of paragraphs you want to generate, with a maximum of 25. To generate a new set of random users, please click the random user button above again. Give it a try!</p><br>
+    <div class="form">
+        <form method="post">
+            <input type='hidden' class='form-control' name='_token' value='{{ csrf_token() }}'>
+            <div class="input-group">
+                <span class="input-group-addon" id="paragraphs">How many paragraphs?</span>
+                <input type='number' name='paragraphs' class='form-control' value='{{ old(' paragraphs ') }}' min='1' max='25' required aria-describedby="paragraphs">
+                
+            </div>
 
-    <form method="post">
-        <input type='hidden' class='form-control' name='_token' value='{{ csrf_token() }}'>
-        <input type='number' name='paragraphs' value='{{ old('paragraphs') }}' min='1' max='25' required><br>
-        @if(count($errors) > 0)
+            @if(count($errors) > 0)
             <ul>
                 @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
+                <li>{{ $error }}</li>
                 @endforeach
             </ul>
-        @endif
-        <button type="submit" class="btn btn-success">
-        Generate
-        </button>
+            @endif
+            <input type="submit" class="btn btn-success" value="Generate">
 
-    </form>
+        </form>
+    </div>
+</div>
 @stop
