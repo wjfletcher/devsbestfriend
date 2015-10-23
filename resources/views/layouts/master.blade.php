@@ -84,9 +84,17 @@
             
             <p>Ever wanted to create random users in order to populate your site? Or to make paragraphs and paragraphs of text with the click of a button? Well now you can! Introducing the Random User Generator and Lorem Ipsum text generator by Warren Fletcher. Simply click one of the buttons below to start producing data now!</p>
             
-            <a href="/randuser"><button type="button" class="btn btn-info">Random User</button></a>
-            <a href="/lorem"><button type="button" class="btn btn-info">Lorem Ipsum Generator</button></a>
+            <!--<a href="/randuser"><button type="button" class="btn btn-info">Random User</button></a>
+            <a href="/lorem"><button type="button" class="btn btn-info">Lorem Ipsum Generator</button></a>-->
             
+            
+            <form class="genbutton" action="/randuser">
+            <button class="btn btn-info">Random User Generator</button>
+            </form>
+            
+            <form class="genbutton" action="/lorem">
+            <button class="btn btn-info">Lorem Ipsum Generator</button>
+            </form>
             
 
         </div>

@@ -3,7 +3,7 @@
 @section('content')
 <div class="section">
     <h2>Lorem Ipsum Generator</h2>
-    <p>Simply enter the number of paragraphs you want to generate, with a maximum of 25. To generate a new set of random users, please click the random user button above again. Give it a try!</p><br>
+    <p>Simply enter the number of paragraphs you want to generate, with a maximum of 25. To generate a new set of paragraphs, please click the Lorem Ipsum button above again. Give it a try!</p><br>
     <div class="form">
         <form method="post">
             <input type='hidden' class='form-control' name='_token' value='{{ csrf_token() }}'>
