@@ -18,13 +18,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
     <!-- Custom CSS -->
-    
+
     <link rel="stylesheet" href="{{ URL::asset('master.css') }}">
 
 </head>
 
 <body>
-    
+
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
             <div class="navbar-header">
@@ -56,7 +56,7 @@
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Project 3 <span class="caret"></span></a>
-                           <ul class="dropdown-menu">
+                        <ul class="dropdown-menu">
                             <li class="title">Developers Best Friend</li>
                             <li><a href="#">View</a></li>
                             <li><a href="https://github.com/wjfletcher/p3">Github</a></li>
@@ -81,24 +81,24 @@
     <div class="container">
         <div class="jumbotron">
             <h1>Developer's Best Friend</h1>
-            
+
             <p>Ever wanted to create random users in order to populate your site? Or to make paragraphs and paragraphs of text with the click of a button? Well now you can! Introducing the Random User Generator and Lorem Ipsum text generator by Warren Fletcher. Simply click one of the buttons below to start producing data now!</p>
-            
+
             <!--<a href="/randuser"><button type="button" class="btn btn-info">Random User</button></a>
             <a href="/lorem"><button type="button" class="btn btn-info">Lorem Ipsum Generator</button></a>-->
-            
-            
+
+
             <form class="genbutton" action="/randuser">
-            <button class="btn btn-info">Random User Generator</button>
+                <button class="btn btn-info">Random User Generator</button>
             </form>
-            
+
             <form class="genbutton" action="/lorem">
-            <button class="btn btn-info">Lorem Ipsum Generator</button>
+                <button class="btn btn-info">Lorem Ipsum Generator</button>
             </form>
-            
+
 
         </div>
-        
+
         @yield('content')
 
     </div>
