@@ -1,27 +1,25 @@
-## Laravel PHP Framework
+# Project 3 - Developers Best Friend
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+## Live URL
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+http://p3.wjfletcher.me
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+## Screencast demo
 
-## Official Documentation
+http://screencast.com/t/VtG2hdWmPNh7
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+## Description
 
-## Contributing
+In this project, we got cracking on our first Laravel app! What I made was an app called "Developers Best Friend". This app contains a Lorem Ipsum text generator, as well as a random user generator. For both apps, all you have to do is fill in how many paragraphs/users you would like to generate, with a maximum of 25, and then hit generate, and the data is returned 
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+## Outside code
 
-## Security Vulnerabilities
+http://getbootstrap.com/
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+http://laravel.com/
 
-### License
+https://github.com/barryvdh/laravel-debugbar
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+https://github.com/Badcow/LoremIpsum
+
+https://github.com/fzaninotto/Faker
